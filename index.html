@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Q101.Bootstrap.ModalConfirm</title>
+    <meta charset="utf-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/modal-confirm.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">Q101.ModalConfirm</a>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <br/><br/>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="panel-title">Modal Success Alert</div>
+        </div>
+        <div class="panel-body">
+            <br/>
+            <p>modalConfirm("Заголовок", "Текст под заголовком", "Подробности").success.alert();</p>
+            <br/>
+        </div>
+        <div class="panel-footer">
+            <button type="button" class="btn btn-success" data-toggle="alert-success-simple">Простое оповещение</button>
+            <button type="button" class="btn btn-success" data-toggle="alert-success-header">Оповещение с заголовком</button>
+            <button type="button" class="btn btn-success" data-toggle="alert-success-full">Полное оповещение</button>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="panel panel-warning">
+        <div class="panel-heading">
+            <div class="panel-title">Modal Warning Alert</div>
+        </div>
+        <div class="panel-body">
+            <br />
+            <p>modalConfirm("Заголовок", "Текст под заголовком", "Подробности").warning.alert();</p>
+            <br />
+        </div>
+        <div class="panel-footer">
+            <button type="button" class="btn btn-warning" data-toggle="alert-warning-simple">Простое оповещение</button>
+            <button type="button" class="btn btn-warning" data-toggle="alert-warning-header">Оповещение с заголовком</button>
+            <button type="button" class="btn btn-warning" data-toggle="alert-warning-full">Полное оповещение</button>
+        </div>
+    </div>
+    <br /><br />
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            <div class="panel-title">Modal Warning Alert</div>
+        </div>
+        <div class="panel-body">
+            <br />
+            <p>modalConfirm("Заголовок", "Текст под заголовком", "Подробности").danger.alert();</p>
+            <br />
+        </div>
+        <div class="panel-footer">
+            <button type="button" class="btn btn-danger" data-toggle="alert-danger-simple">Простое оповещение</button>
+            <button type="button" class="btn btn-danger" data-toggle="alert-danger-header">Оповещение с заголовком</button>
+            <button type="button" class="btn btn-danger" data-toggle="alert-danger-full">Полное оповещение</button>
+        </div>
+    </div>
+    <br /><br />
+</div>
+    <!----------------------------------------- Универсальная модальная форма ------------------------------------------------------------------>
+    <div id="ModalConfirmForm" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" data-role="confirm-header"><span></span>&nbsp;&nbsp;<span></span></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 class="text-center" data-role="confirm-text"><span class="glyphicon"></span>&nbsp;&nbsp;<span></span></h4>
+                            <p data-role="description"></p>
+                        </div>
+                    </div>
+                    <div class="row hidden" data-role="confirm-buttons">
+                        <div class="col-xs-12 col-sm-offset-1 col-sm-4">
+                            <button class="btn btn-danger btn-block" data-role="confirm-button" data-dismiss="modal">Да</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-offset-2 col-sm-4">
+                            <button class="btn btn-default btn-block" data-role="cancel-button" data-dismiss="modal">Отмена</button>
+                        </div>
+                    </div>
+                    <div class="row hidden" data-role="alert-buttons">
+                        <div class="col-xs-12 col-sm-offset-4 col-sm-4">
+                            <button class="btn btn-default btn-block" data-role="alert-button" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                    <div class="row hidden" data-role="processing">
+                        <div class="col-xs-12">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back-processing">
+        <img src="css/loading.gif" /> Подождите..
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modal-confirm.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
