@@ -1,0 +1,27 @@
+﻿div#ModalConfirmForm > .modal-dialog {
+    margin-top: calc(100vh / 2 - 100px);
+}
+#ModalConfirmForm .modal-body p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 200px;
+    overflow-y: auto;    
+}
+.back-processing {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.46);
+    text-align: center;
+    color: #fff;
+    font-size: 200%;
+    font-weight: bold;
+    padding-top: 45vh;   
+}
